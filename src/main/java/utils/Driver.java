@@ -19,22 +19,22 @@ public class Driver {
 		if(browser.equalsIgnoreCase("chrome")) {
 			Log.info("Browser parameter is: CHROME");
 			driver.set(new ChromeDriver(getChromeOptions()));
-			long chromeId = Thread.currentThread().threadId();
-			Log.info("Chrome =--> Thread.id = " + chromeId);
+			//long chromeId = Thread.currentThread().threadId();
+			//Log.info("Chrome =--> Thread.id = " + chromeId);
 			return driver.get();
 			
 		}else if(browser.equalsIgnoreCase("firefox")) {
 			Log.info("Browser parameter is: FIREFOX");
 			driver.set(new FirefoxDriver());
-			long firefoxId = Thread.currentThread().threadId();
-			Log.info("Firefox =--> Thread.id = " + firefoxId);
+			//long firefoxId = Thread.currentThread().threadId();
+			//Log.info("Firefox =--> Thread.id = " + firefoxId);
 			return driver.get();
 			
 		}else if(browser.equalsIgnoreCase("edge")) {
 			Log.info("Browser parameter is: EDGE");
 			driver.set(new EdgeDriver(getEdgeOptions()));
-			long edgeId = Thread.currentThread().threadId();
-			Log.info("Edge =--> Thread.id = " + edgeId);
+			//long edgeId = Thread.currentThread().threadId();
+			//Log.info("Edge =--> Thread.id = " + edgeId);
 			return driver.get();
 		}
 		return driver.get();
