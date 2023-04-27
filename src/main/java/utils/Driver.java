@@ -25,7 +25,7 @@ public class Driver {
 			
 		}else if(browser.equalsIgnoreCase("firefox")) {
 			Log.info("Browser parameter is: FIREFOX");
-			driver.set(new FirefoxDriver());
+			driver.set(new FirefoxDriver(getFirefoxOptions()));
 			//long firefoxId = Thread.currentThread().threadId();
 			//Log.info("Firefox =--> Thread.id = " + firefoxId);
 			return driver.get();
