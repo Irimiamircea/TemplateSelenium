@@ -16,7 +16,7 @@ tools {
      
       steps {
         echo "This is the unit test phase"
-        sh 'mvn test -DsuiteXml=testng-paralel.xml'
+        sh 'mvn test -DsuiteXml=Testng-paralel.xml'
       }
 }
 stage ('PreProduction stage'){
